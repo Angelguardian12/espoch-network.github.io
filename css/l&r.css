@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ChunkyRegular', ChunkyRegular;
+}
+body
+{
+    background-image: url(../img/Logo-Network.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background: #256c92a1;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./img/banner.jpg);
+}
+.flex-center
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+.box__all{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+.box__behind{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}

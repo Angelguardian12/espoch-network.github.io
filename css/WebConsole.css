@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ChunkyRegular', ChunkyRegular;
+}
+.flat-progressbar{
+	height: 10px;
+}
+body{
+	background: #bc48ff;
+}
+main{
+	color: rgba(255, 255, 255, 0.741);
+}
+.console{
+	height: 480px;
+}
+
+.form-control::-webkit-input-placeholder { opacity: 0.4; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { opacity: 0.4; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { opacity: 0.4; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { opacity: 0.4; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { opacity: 0.4; }  /* Microsoft Edge */

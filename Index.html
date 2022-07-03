@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/buttons.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <section class="wrapper">
+        <div id="star"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <div id="flex-center" class="flex-center">
+        <div class="logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+            <a href="./index.html"><p id="title"></p></a>
+    </div>
+    <div class="nav">
+        <ul>
+            <li class="list active">
+                <a href="./Index.html">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="text">Inicio</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./modalidades.html">
+                    <span class="icon"><i class="fa-solid fa-gamepad"></i></span>
+                    <span class="text">Modalidades</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./foro.html">
+                    <span class="icon"><i class="fa-solid fa-tornado"></i></span>
+                    <span class="text">Foro</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="https://espoch-network.craftingstore.net">
+                    <span class="icon"><i class="fa-solid fa-basket-shopping"></i></span>
+                    <span class="text">Tienda</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./help.html">
+                    <span class="icon"><i class="fa-solid fa-circle-question"></i></span>
+                    <span class="text">Ayuda</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+
+<div class="tooltip">
+    <a style="color:#48C9B0">Server Ip »</a>
+    <span class="color"></span>
+    <a style="color:#F1C40F"><b>play.espoch-network.xyz</b></a>
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip"></span>
+  Copiar
+  </button>
+</div>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click', activeLink));
+    </script>
+
+    <div id="llama" class="llama-center">
+        <div class="llama"><img src="img/llama2.png" alt="">
+        </div>
+    </div>
+    <div class="aviso-cookies" id="aviso-cookies">
+		<img class="galleta" src="./img/cookie.svg" alt="Galleta">
+		<h3 class="titulo">Cookies</h3>
+		<p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+		<button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+		<a class="enlace" href="aviso-cookies.html">Aviso de Cookies</a>
+	</div>
+	<div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+
+	<script src="js/aviso-cookies.js"></script>
+    <div class="social-bar">
+            <a href="https://www.facebook.com/Espoch-Network-101806562496386"><i class="fa-brands fa-facebook-square"></i>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <a href="https://discord.gg/TmhfmaM6TN"><i class="fa-brands fa-discord"></i>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <a href="https://www.instagram.com/jairo_ramirez_12/"><i class="fa-brands fa-instagram"></i>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <a href="https://www.youtube.com/channel/UCu9CFxrXWvGQhdKfGY-o0Ig"><i class="fa-brands fa-youtube-square"></i>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+    </div>
+    <div class="article">
+
+        <p class="articleTitle">Información</p>
+
+        <p class="articleDescription">ESPOCH-NETWORK es una web dedicada al juego de minecraft y a su servidor
+            el cual esta disponible para 
+            todos los que gusten jugar en este. En esta sección podran encontrar la informacion de la Web.
+            Y toda la información que el servidor posee, la cual se ira actualizando al paso del tiempo.</p>
+        
+            <p class="logoespoch" id="content1">      
+                <img style="height: 300px;"
+                    src="img/Logo-Network.png" alt="">
+            </p>
+
+        <div class="infoblock">
+            <div class="barPurple"></div>
+            <div class="infoblockText">
+                <p class="infobTitle">Reglas</p>
+                <p class="infobDescription"> Las reglas del servidor y web aparecen en esta sección, asegurate
+                    de leerlas y comprenderlas.</p>
+                <p class="infobContent" id="content1">
+                    El Sistema de PvP es el vanilla lo cual permite a los jugadores tener la libertad
+                    de realizar sus enfrentamientos.
+                    Existen zonas seguras donde el pvp no esta permitido y estas son el spawn y dentro
+                    de las piedras de protección de cada jugador.
+                </p>
+            </div>
+            <input class="infoblockButtonPurple" type="button" value="+" onclick="openContent1()" id="button1">
+        </div>
+
+        <div class="infoblock">
+            <div class="barRed"></div>
+            <div class="infoblockText">
+                <p class="infobTitle">PVP</p>
+                <p class="infobDescription"> El PvP en el servidor esta permitido</p>
+                <p class="infobContent" id="content2">
+                    El Sistema de PvP es el vanilla lo cual permite a los jugadores tener la libertad
+                    de realizar sus enfrentamientos.
+                    Existen zonas seguras donde el pvp no esta permitido y estas son el spawn y dentro
+                    de las piedras de protección de cada jugador.
+                </p>
+            </div>
+            <input class="infoblockButtonRed" type="button" value="+" onclick="openContent2()" id="button2">
+        </div>
+
+        <div class="infoblock">
+            <div class="barGreen"></div>
+            <div class="infoblockText">
+                <p class="infobTitle">Sistema de Economia</p>
+                <p class="infobDescription"> La Economia del servidor esta basada en los Jugadores, ustedes son los estabilizadores de la Economia.</p>
+                <p class="infobContent" id="content3">
+                    El Sistema de Economia se basa en la cantidad de mobs y otros objetos que el jugador venda o compre. 
+                    Existen misiones y dungeons en donde se puede ganar dinero y así lograr ser el jugador 
+                    con más dinero del servidor. Pero recuerda que al morir se perdera mucho de ese dinero
+                    y deberas guardarlo en el banco.
+                </p>
+            </div>
+            <input class="infoblockButtonGreen" type="button" value="+" onclick="openContent3()" id="button3">
+        </div>
+
+        <div class="infoblock">
+            <div class="barYellow"></div>
+            <div class="infoblockText">
+                <p class="infobTitle">Sistema de Hogares</p>
+                <p class="infobDescription"> Los Hogares son zonas donde el jugador puede establecerse.
+                </p>
+                <p class="infobContent" id="content4">
+                    Para poder usar el Sistema de Hogares debes usar el comando /sethome (Nombre) el cual definira
+                    uno de tus hogares y podras regresar a este hogar con el comando /home (Nombre). Los defecto
+                    todos poseen 3 hogares y se pueden obtener más comprando un rango en la tienda del servidor.
+                    El Sistema de hogares es simple de usar y muy practico para los Jugadores que tienen diversas
+                    zonas guardadas.
+                </p>
+            </div>
+            <input class="infoblockButtonYellow" type="button" value="+" onclick="openContent4()" id="button4">
+        </div>
+    </div>
+
+    <div class="extra">
+        <iframe src="https://discord.com/widget?id=932450209861074944&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+    
+    <footer class="p-footer" id="footer">
+        <div class="p-footer-inner">
+            <div class="p-footer-columns">
+                <div class="p-footer-column">
+                    <h3>
+                        <i class="fa-solid fa-caret-right">
+                        </i>
+                         Sobre Nosotros
+                    </h3>
+                    " Comenzamos como un servidor pequeño solo para unos cuantos
+                    jugadores, luego decidimos abrir más modalidades para que
+                    nuestra comunidad crezca y cada vez sea mejor, tratamos de
+                    mejorar día a día. "
+                </div>
+                <div class="p-footer-column">
+                    <h3>
+                        <i class="fa-solid fa-circle-info"></i>
+                         Paginas
+                    </h3>
+                    <ul class="p-footer-paginas">
+                        <li>
+                            <a href="./Index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./modalidades.html">Modalidades</a>
+                        </li>
+                        <li>
+                            <a href="./foro.html">Foro</a>
+                        </li>
+                        <li>
+                            <a href="./shop.html">Tienda</a>
+                        </li>
+                        <li>
+                            <a href="./help.html">Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-footer-column">
+                    <h3>
+                        <i class="fa-solid fa-globe"></i>
+                         Facebook
+                    </h3>
+                </div>
+                <div class="p-footer-blue">
+                    <a href="https://www.facebook.com/Espoch-Network-101806562496386"></a>
+                </div>
+                <div class="p-footer-column">
+                    <h3>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                         Tienda
+                    </h3>
+                    " Los desarrolladores y todo el equipo de administración
+                    trabajan arduamente para mantener los servidores y 
+                    traer contenido nuevo cada cierto tiempo, considera 
+                    apoyarlos obteniendo un rango o adquiriendo algun
+                    item de la tienda."
+                </div>
+
+            </div>
+        </div>
+        <div class="p-footer-lower">
+            <div class="p-footer-inner">
+                <div class="p-footer-copyright"> Todos los derechos Reservados &copy; 2022 Diseñado por <span>AngelGuardian12</span></p>
+            </div>
+        </div>
+        <input type="text" value="play.espoch-network.xyz" id="myInput">
+    </footer>
+</body>
+</html>
